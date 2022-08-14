@@ -1,25 +1,66 @@
 :root {
     /* Colors */
-    --white-color: #ffffff;
     --purple-color: #722DF9;
     --dark-purple: #5724BA;
     --darker-purple: #421C8C;
+    --white-color: #ffffff;
+
+    /* Box Shadow */
+    --box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.offcanvas, .oncanvas {
-    background-color: var(--purple-color);
-    height: 100vh;
+/* Global */
+.name {
+    color: var(--purple-color);
 }
 
-.navbar-nav li a {
-    color: var(--white-color);
-    transition: 0.3s;
+.active {
+    color: var(--dark-purple);
 }
 
 .navbar-nav li a:hover {
     color: var(--darker-purple);
+    transition: 0.3s;
 }
 
-.oncanvas-header {
-    right: 0;
+.offcanvas, .oncanvas, .icon, .btn {
+    background-color: var(--purple-color);
+    transition: 0.3s;
+}
+
+.icon:hover, .btn:hover {
+    background-color: var(--darker-purple);
+}
+
+/* Navigation Bar */
+.navigation {
+    z-index: 1;
+}
+.navbar-nav li a {
+    color: var(--white-color);
+}
+
+/* Homepage */
+.home {
+    /* margin-top: 78px; for other page*/
+    height: 100vh;
+}
+
+.profile-pic {
+    margin: auto auto;
+    height: 230px;
+    width: 230px;
+    border: 6px solid white; 
+    box-shadow: var(--box-shadow);
+}
+
+.profile-pic:hover img{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.profile-pic img{
+    transition: all 0.3s ease;
+    height: 230px;
+    width: 230px;
 }
