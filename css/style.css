@@ -10,12 +10,12 @@
 }
 
 /* Global */
-.name {
+.name, .title, .icon {
     color: var(--purple-color);
 }
 
-.active {
-    color: var(--dark-purple);
+.active, .information {
+    color: var(--darker-purple);
 }
 
 .navbar-nav li a:hover {
@@ -23,14 +23,23 @@
     transition: 0.3s;
 }
 
-.offcanvas, .oncanvas, .icon, .btn {
+.offcanvas, .oncanvas, .logo, .btn {
     background-color: var(--purple-color);
     transition: 0.3s;
 }
 
-.icon:hover, .btn:hover {
+.logo:hover, .btn:hover {
     background-color: var(--darker-purple);
 }
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.home, .about {
+    height: 100vh;
+    margin-top: 78px;
+ }
 
 /* Navigation Bar */
 .navigation {
@@ -41,11 +50,6 @@
 }
 
 /* Homepage */
-.home {
-    /* margin-top: 78px; for other page*/
-    height: 100vh;
-}
-
 .profile-pic {
     margin: auto auto;
     height: 230px;
@@ -54,13 +58,32 @@
     box-shadow: var(--box-shadow);
 }
 
-.profile-pic:hover img{
+.profile-pic:hover img {
     cursor: pointer;
     transform: scale(1.2);
 }
 
-.profile-pic img{
+.profile-pic img {
     transition: all 0.3s ease;
     height: 230px;
+    width: 230px;
+}
+
+/* About Page */
+.about-pic {
+    margin: auto auto;
+    height: 330px;
+    width: 230px;
+    border: 6px solid white; 
+    box-shadow: var(--box-shadow);
+}
+.about-pic:hover img {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.about-pic img {
+    transition: all 0.3s ease;
+    height: 330px;
     width: 230px;
 }
