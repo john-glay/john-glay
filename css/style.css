@@ -6,8 +6,9 @@
     --darker-purple: #421C8C;
 }
 
-.offcanvas {
+.offcanvas, .oncanvas {
     background-color: var(--purple-color);
+    height: 100vh;
 }
 
 .navbar-nav li a {
@@ -17,4 +18,8 @@
 
 .navbar-nav li a:hover {
     color: var(--darker-purple);
+}
+
+.oncanvas-header {
+    right: 0;
 }
