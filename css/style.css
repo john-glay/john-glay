@@ -14,7 +14,7 @@
     color: var(--purple-color);
 }
 
-.active, .information {
+.active, .information, .front, .back{
     color: var(--darker-purple);
 }
 
@@ -23,7 +23,7 @@
     transition: 0.3s;
 }
 
-.offcanvas, .oncanvas, .logo, .btn {
+.offcanvas, .oncanvas, .logo, .btn, .progress-bar {
     background-color: var(--purple-color);
     transition: 0.3s;
 }
@@ -36,7 +36,7 @@
     box-shadow: var(--box-shadow);
 }
 
-.home, .about {
+.home, .about, .skills {
     height: 100vh;
     margin-top: 78px;
  }
