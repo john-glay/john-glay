@@ -10,35 +10,81 @@
 }
 
 /* Global */
-.name, .title, .icon {
+.name, 
+.title, 
+.icon,
+.services-content:hover i,
+.btn-under {
     color: var(--purple-color);
 }
 
-.active, .sub {
+.active, 
+.sub {
     color: var(--darker-purple);
+}
+
+.services-content:hover h4, 
+.services-content:hover p,
+.services-content i,
+.under-sub, 
+.under-p,
+.btn-under:hover {
+    color: var(--white-color);
 }
 
 .navbar-nav li a:hover {
     color: var(--darker-purple);
-    transition: 0.3s;
 }
 
-.offcanvas, .oncanvas, .logo, .btn, .progress-bar, .circle {
+.offcanvas, 
+.oncanvas, 
+.logo, 
+.btn-home, 
+.progress-bar, 
+.circle, 
+.services-content:hover {
     background-color: var(--purple-color);
-    transition: 0.3s;
 }
 
-.logo:hover, .btn:hover, .line {
+.logo:hover, 
+.btn-home:hover, 
+.line,
+.under,
+.btn-under:hover {
     background-color: var(--darker-purple);
+}
+
+.services-content:hover i,
+.btn-under {
+    background-color: var(--white-color);
+}
+
+.navbar-nav li a:hover, 
+.logo, 
+.btn-home, 
+.about-pic img, 
+.services-content, 
+.services-content h4, 
+.services-content p,
+.services-content i,
+.btn-under {
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar {
     box-shadow: var(--box-shadow);
 }
 
-.home, .about, .skills {
+.home, 
+.about, 
+.skills,
+.services {
     height: 100vh;
     margin-top: 78px;
+ }
+
+ .max-row {
+    max-width: 976.5px;
  }
 
 /* Navigation Bar */
@@ -83,7 +129,6 @@
 }
 
 .about-pic img {
-    transition: all 0.3s ease;
     height: 330px;
     width: 230px;
 }
@@ -105,4 +150,18 @@
     width: 15px;
     left: 15%;
     bottom: 12%;
+}
+
+/* Services Page */
+.services-content {
+    border: 2px solid var(--purple-color);
+}
+
+.under-p {
+    max-width: 550px;
+}
+
+.btn-under {
+    border: 2px solid white;
+    max-width: 300px;
 }
