@@ -14,7 +14,7 @@
     color: var(--purple-color);
 }
 
-.active, .information, .front, .back{
+.active, .sub {
     color: var(--darker-purple);
 }
 
@@ -23,12 +23,12 @@
     transition: 0.3s;
 }
 
-.offcanvas, .oncanvas, .logo, .btn, .progress-bar {
+.offcanvas, .oncanvas, .logo, .btn, .progress-bar, .circle {
     background-color: var(--purple-color);
     transition: 0.3s;
 }
 
-.logo:hover, .btn:hover {
+.logo:hover, .btn:hover, .line {
     background-color: var(--darker-purple);
 }
 
@@ -86,4 +86,23 @@
     transition: all 0.3s ease;
     height: 330px;
     width: 230px;
+}
+
+/* Skills Page */
+.line {
+    width: 5px;
+}
+
+.circle-border {
+    height: 25px;
+    width: 25px;
+    border: 2px solid var(--purple-color);
+    left: -10px;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    left: 15%;
+    bottom: 12%;
 }
