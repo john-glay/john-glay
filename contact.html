@@ -21,7 +21,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>John Glay | Home</title>
+    <title>John Glay | Contact</title>
     <link rel="icon" type="image/x-icon" href="/images/x-icon.jpg" />
   </head>
   <body>
@@ -39,7 +39,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- <a class="navbar-brand fs-5 fw-bolder p-0 me-3" href="index.html">John Glay</a> -->
+          <a class="navbar-brand fs-5 fw-bolder p-0 me-3" href="index.html"
+            >John Glay</a
+          >
         </div>
       </div>
 
@@ -64,7 +66,7 @@
                 href="index.html"
                 class="text-decoration-none fw-bolder d-block"
               >
-                <span class="active">HOME</span>
+                HOME
               </a>
             </li>
             <li class="nav-item mb-4">
@@ -104,7 +106,7 @@
                 href="contact.html"
                 class="text-decoration-none fw-bolder d-block"
               >
-                CONTACT ME
+                <span class="active">CONTACT ME</span>
               </a>
             </li>
           </ul>
@@ -121,7 +123,7 @@
                 href="index.html"
                 class="text-decoration-none fw-bolder d-block"
               >
-                <span class="active">HOME</span>
+                HOME
               </a>
             </li>
             <li class="nav-item mb-4">
@@ -161,7 +163,7 @@
                 href="contact.html"
                 class="text-decoration-none fw-bolder d-block"
               >
-                CONTACT ME
+                <span class="active">CONTACT ME</span>
               </a>
             </li>
           </ul>
@@ -169,41 +171,82 @@
       </div>
     </nav>
 
-    <!-- ---- Homepage ---- -->
-    <section
-      class="pages col-12 col-lg-9 float-end p-5 mt-lg-0 d-flex justify-content-center align-items-center"
-    >
-      <div class="w-auto">
-        <div class="profile-pic overflow-hidden rounded-circle">
-          <img src="images/profile.jpg" alt="profile picture" />
+    <!-- ---- Contact Page ---- -->
+    <section class="pages col-12 col-lg-9 float-end mt-lg-0 d-xxl-flex justify-content-center align-items-center">
+      <div class="w-100 p-5">
+        <p class="text-center fs-6 fw-bold mb-2">Contact Me</p>
+        <h1 class="title text-uppercase fw-bolder text-center">Get In Touch</h1>
+        <div class="max-row mx-xxl-auto row mt-5">
+          <div class="col-md-6">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="contact-form m-0 w-100 border-0 p-3 rounded-2 fw-semibold"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="contact-form m-0 w-100 border-0 p-3 rounded-2 fw-semibold"
+                />
+              </div>
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  placeholder="Project"
+                  class="contact-form m-0 w-100 border-0 p-3 rounded-2 fw-semibold"
+                />
+              </div>
+              <div class="col-md-12">
+                <textarea
+                  name="Message"
+                  placeholder="Message"
+                  class="contact-form m-0 w-100 border-0 p-3 rounded-2 fw-semibold message"
+                ></textarea>
+              </div>
+              <div class="col-md-5">
+                <button
+                  type="button"
+                  class="btn btn-contact text-white w-100 p-3 m-0 fw-semibold text-center"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pt-5 pt-md-0 m-0 ps-md-5 mb-5">
+            <h4 class="sub fw-bold m-0 w-auto">Call me</h4>
+            <div class="row gx-5 ps-4 pt-4 pb-4 pb-md-5 align-items-center">
+              <div class="col-1">
+                <i class="icon fs-5 fa-solid fa-phone"></i>
+              </div>
+              <div class="col-10">
+                <p class="m-0">0956-840-0253</p>
+              </div>
+            </div>
+            <h4 class="sub fw-bold m-0 w-auto">E-mail</h4>
+            <div class="row gx-5 ps-4 pt-4 pb-4 pb-md-5 align-items-center">
+              <div class="col-1">
+                <i class="icon fs-5 fa-solid fa-envelope"></i>
+              </div>
+              <div class="col-10">
+                <p class="m-0">johnglayc.bunao@gmail.com</p>
+              </div>
+            </div>
+            <h4 class="sub fw-bold m-0 w-auto">Location</h4>
+            <div class="row gx-5 ps-4 pt-4 align-items-center">
+              <div class="col-1">
+                <i class="icon fs-5 fa-solid fa-location-dot"></i>
+              </div>
+              <div class="col-10">
+                <p class="m-0">Metro Manila, Philippines</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <h1 class="name text-uppercase fw-bolder text-center mt-4 mb-2">
-          John Glay Bunao
-        </h1>
-        <p class="text-center fs-6 fw-bold m-0">Developer</p>
-
-        <div class="d-flex justify-content-evenly mt-5">
-          <a href="#" class="logo text-white rounded-circle">
-            <i class="p-3 fs-6 fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="#" class="logo text-white rounded-circle">
-            <i class="p-3 fs-6 fa-brands fa-github"></i>
-          </a>
-          <a href="#" class="logo text-white rounded-circle">
-            <i class="p-3 fs-6 fa-brands fa-instagram"></i>
-          </a>
-          <a href="#" class="logo text-white rounded-circle">
-            <i class="p-3 fs-6 fa-brands fa-facebook"></i>
-          </a>
-        </div>
-
-        <button
-          type="button"
-          class="btn btn-home text-white w-100 mt-5 pt-3 pb-3 fw-bold"
-        >
-          Download Resume
-        </button>
       </div>
     </section>
 

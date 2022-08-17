@@ -1,8 +1,8 @@
 :root {
     /* Colors */
     --purple-color: #722DF9;
-    --dark-purple: #5724BA;
     --darker-purple: #421C8C;
+    --light-gray: #E9E6E5BA;
     --white-color: #ffffff;
 
     /* Box Shadow */
@@ -20,7 +20,8 @@
 .active, 
 .sub,
 .btn-under,
-.work-logo {
+.work-logo,
+.contact ::placeholder {
     color: var(--darker-purple);
 }
 
@@ -43,7 +44,8 @@
 .btn-home, 
 .progress-bar, 
 .circle, 
-.services-content:hover {
+.services-content:hover,
+.btn-contact {
     background-color: var(--purple-color);
 }
 
@@ -51,8 +53,13 @@
 .btn-home:hover, 
 .line,
 .under,
-.btn-under:hover {
+.btn-under:hover,
+.btn-contact:hover {
     background-color: var(--darker-purple);
+}
+
+.contact-form {
+    background-color: var(--light-gray);
 }
 
 .services-content:hover i,
@@ -78,11 +85,7 @@
     box-shadow: var(--box-shadow);
 }
 
-.home, 
-.about, 
-.skills,
-.services,
-.works {
+.pages {
     height: 100vh;
     margin-top: 78px;
  }
@@ -189,4 +192,9 @@
 
 .works-pic:hover .works-data {
     bottom: 0;
+}
+
+/* Contact Page */
+.message {
+    height: 186px;
 }
