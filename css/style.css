@@ -13,13 +13,14 @@
 .name, 
 .title, 
 .icon,
-.services-content:hover i,
-.btn-under {
+.services-content:hover i {
     color: var(--purple-color);
 }
 
 .active, 
-.sub {
+.sub,
+.btn-under,
+.work-logo {
     color: var(--darker-purple);
 }
 
@@ -59,7 +60,8 @@
     background-color: var(--white-color);
 }
 
-.navbar-nav li a:hover, 
+.navbar-nav li a:hover,
+.profile-pic img, 
 .logo, 
 .btn-home, 
 .about-pic img, 
@@ -67,7 +69,8 @@
 .services-content h4, 
 .services-content p,
 .services-content i,
-.btn-under {
+.btn-under,
+.works-data {
     transition: all 0.3s ease-in-out;
 }
 
@@ -78,7 +81,8 @@
 .home, 
 .about, 
 .skills,
-.services {
+.services,
+.works {
     height: 100vh;
     margin-top: 78px;
  }
@@ -110,7 +114,6 @@
 }
 
 .profile-pic img {
-    transition: all 0.3s ease;
     height: 230px;
     width: 230px;
 }
@@ -164,4 +167,26 @@
 .btn-under {
     border: 2px solid white;
     max-width: 300px;
+}
+
+/* Works Page */
+.works-pic {
+    height: 279px;
+    border: 6px solid white; 
+    box-shadow: var(--box-shadow);
+}
+
+.works-pic img {
+    height: 279px;
+    margin: auto auto;
+    display: block;
+}
+
+.works-data {
+    bottom: -101%;
+    background-color: rgba(66, 28, 140, .7);
+}
+
+.works-pic:hover .works-data {
+    bottom: 0;
 }
